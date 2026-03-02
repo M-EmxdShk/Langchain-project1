@@ -24,7 +24,7 @@ def check_domain_availability(domain_name: str) -> str:
 
 
 def generate_and_check_business(expertise: str):
-    llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.7)
+    llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.2)
     
     llm_with_tools = llm.bind_tools([check_domain_availability])
     
